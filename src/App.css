@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -19,7 +23,8 @@
 
 .input-style {
   border: 1px solid  #d1d5db;
-  width: 300px;
+  width: 80%;
+  max-width: 300px;
   border-radius: 5px;
   margin-top: 50px;
   padding: 5px;
@@ -29,12 +34,27 @@
   border: none;
   border-radius: 5px;
   margin-bottom: 10px;
-  width: 310px;
+  width: 80%;
+  max-width: 300px;
+  height: auto;
   background-color: #e5e7eb;
   padding: 5px;
   cursor: pointer;
 }
 
 .dog-image {
+  width: 100%;
   max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 320px) {
+  .input-style,
+  .button {
+    width: 100%;
+  }
+
+  .dog-image {
+    max-width: 100%;
+  }
 }
